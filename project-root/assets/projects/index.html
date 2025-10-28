@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lumicode — Future of Code</title>
+
+  <!-- Google font (optional) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- Inline SVG logo: simbol (lightbulb+brackets) + wordmark -->
+      <a class="logo" href="#" aria-label="Lumicode Home">
+        <svg class="logo-ico" width="72" height="72" viewBox="0 0 64 64" role="img" aria-hidden="false" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="lg" x1="0" x2="1" y1="0" y2="1">
+              <stop offset="0" stop-color="#9b5cff"/>
+              <stop offset="1" stop-color="#6c2cff"/>
+            </linearGradient>
+            <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+              <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+              <feMerge>
+                <feMergeNode in="coloredBlur"/>
+                <feMergeNode in="SourceGraphic"/>
+              </feMerge>
+            </filter>
+          </defs>
+
+          <!-- simple bulb shape -->
+          <g transform="translate(4,4)" fill="none" stroke="url(#lg)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)">
+            <path d="M28 6c-6 0-10.5 5-10.5 10 0 3.7 1.8 6.4 3.6 8.2 1.2 1.2 1.6 2.6 1.6 5.3v1.5h10v-1.5c0-2.7.4-4.1 1.6-5.3 1.8-1.8 3.6-4.5 3.6-8.2C38.5 11 34 6 28 6z"/>
+            <!-- filament L -->
+            <path d="M27.5 15.5v6" stroke-width="2.8" />
+            <path d="M27.5 21.3h-2.5" stroke-width="2.8" stroke-linecap="round" />
+            <!-- brackets -->
+            <path d="M4 20l6-6" />
+            <path d="M44 14l6 6" />
+            <!-- base -->
+            <path d="M23 34h10" stroke-width="2.6"/>
+            <path d="M23 36h10" stroke-width="2.6"/>
+          </g>
+        </svg>
+
+        <div class="logo-text">
+          <span class="wordmark">LUMICODE</span>
+        </div>
+      </a>
+
+      <nav class="nav">
+        <a href="#about">Tentang</a>
+        <a href="#services">Layanan</a>
+        <a href="#work">Proyek</a>
+        <a href="#contact" class="btn-outline">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <h1 class="hero-title">Mengubah ide menjadi kode — dengan cahaya futuristik.</h1>
+          <p class="hero-sub">Lumicode adalah studio software yang menggabungkan desain elegan dan engineering mutakhir untuk membangun produk digital yang berkelas dan andal.</p>
+
+          <div class="hero-cta">
+            <a class="btn" href="#contact">Mulai proyek</a>
+            <a class="btn ghost" href="#services">Lihat layanan</a>
+          </div>
+
+          <ul class="feature-list">
+            <li><strong>Custom software</strong> — back-end & front-end modern</li>
+            <li><strong>Design system</strong> — UI/UX yang konsisten & elegan</li>
+            <li><strong>AI integration</strong> — otomatisasi dan augmentation</li>
+          </ul>
+        </div>
+
+        <div class="hero-right">
+          <!-- Card showcase -->
+          <div class="card">
+            <div class="card-header">Proyek terbaru</div>
+            <div class="card-body">
+              <h3>Nebula Dashboard</h3>
+              <p>Dashboard analytics real-time untuk platform IoT — performa tinggi, low-latency.</p>
+              <a class="link" href="#work">Lihat studi kasus →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h2 class="section-title">Tentang Lumicode</h2>
+      <p class="lead">Kami percaya teknologi harus tampak elegan sekaligus mudah digunakan. Tim kami terdiri dari engineer, designer, dan product strategist yang fokus pada kualitas dan skalabilitas.</p>
+
+      <div class="three-cols">
+        <div class="col">
+          <h4>Visi</h4>
+          <p>Menciptakan solusi perangkat lunak yang berwibawa, cepat, dan memukau secara visual.</p>
+        </div>
+        <div class="col">
+          <h4>Misi</h4>
+          <p>Menerapkan praktik rekayasa terbaik dan desain yang human-centered untuk setiap produk.</p>
+        </div>
+        <div class="col">
+          <h4>Nilai</h4>
+          <p>Integritas, estetika, kualitas kode, dan inovasi berkelanjutan.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section alt">
+      <div class="container">
+        <h2 class="section-title">Layanan</h2>
+        <div class="services-grid">
+          <article class="service">
+            <h3>Pengembangan Web</h3>
+            <p>Frontend modern (React, Svelte), backend scalable, API design dan deployment.</p>
+          </article>
+          <article class="service">
+            <h3>Desain & Branding</h3>
+            <p>UI/UX, design system, identitas merek termasuk logo dan guideline.</p>
+          </article>
+          <article class="service">
+            <h3>AI & Otomatisasi</h3>
+            <p>Integrasi model, pipeline data, dan automasi proses bisnis.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section container">
+      <h2 class="section-title">Proyek Pilihan</h2>
+      <div class="projects">
+        <div class="project">
+          <h4>Nebula Dashboard</h4>
+          <p>Realtime visualisasi data IoT, built with websockets & grafana-like visuals.</p>
+        </div>
+        <div class="project">
+          <h4>Photon Commerce</h4>
+          <p>Platform e-commerce headless dengan personalisasi AI.</p>
+        </div>
+        <div class="deskripsi">
+            <a href="project1.html" style="color:rgb(76, 0, 255);text-decoration:none;font-weight:bold;">Deskripsi Project</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container contact-inner">
+        <div>
+          <h2 class="section-title">Hubungi Kami</h2>
+          <p>Kirim brief proyek singkat — tim kami akan merespons dalam waktu kerja.</p>
+
+          <ul class="contact-info">
+            <li><strong>Email:</strong> hello@lumicode.example</li>
+            <li><strong>Lokasi:</strong> Jakarta, Indonesia</li>
+          </ul>
+        </div>
+
+        <form id="contactForm" class="contact-form" novalidate>
+          <label>
+            Nama
+            <input type="text" name="name" required placeholder="Nama kamu" />
+          </label>
+
+          <label>
+            Email
+            <input type="email" name="email" required placeholder="email@domain.com" />
+          </label>
+
+          <label>
+            Pesan singkat
+            <textarea name="message" rows="4" required placeholder="Jelaskan proyek singkat..."></textarea>
+          </label>
+
+          <div class="form-row">
+            <button type="submit" class="btn">Kirim</button>
+            <button type="button" id="clearBtn" class="btn ghost">Kosongkan</button>
+          </div>
+
+          <p id="formMsg" class="form-msg" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Lumicode — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
