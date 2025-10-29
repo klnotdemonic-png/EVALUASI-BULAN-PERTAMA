@@ -61,5 +61,4 @@ contoh repository
 https://github.com/FikriBaihaqi73/contoh-evaluasi
 
 Link Deploy[Vercel]: 
-evaluasi-bulan-pertama-two.vercel.app
-
+https://evaluasi-bulan-pertama-two.vercel.app/
