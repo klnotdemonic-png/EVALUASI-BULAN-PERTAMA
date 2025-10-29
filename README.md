@@ -60,4 +60,6 @@ https://contoh-evaluasi.vercel.app (Jangan terlalu sama, kembangkan sesuai kekre
 contoh repository
 https://github.com/FikriBaihaqi73/contoh-evaluasi
 
-Link Deploy[Vercel]:evaluasi-bulan-pertama-two.vercel.app
+Link Deploy[Vercel]: 
+evaluasi-bulan-pertama-two.vercel.app
+
